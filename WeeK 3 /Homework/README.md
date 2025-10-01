@@ -2,8 +2,7 @@
 
 ## Overview
 
-This is a comprehensive Model Context Protocol (MCP) server implementation for e-commerce operations. The server provides 5 enterprise-level tools that can be consumed by AI agents through MCP clients like Claude Desktop, Cursor, or custom implementations.
-
+This is a comprehensive Model Context Protocol (MCP) server implementation for e-commerce operations. The server provides 5 enterprise-level tools.
 ## MCP Tools Implemented
 
 ### 1. check_inventory_status
@@ -56,49 +55,6 @@ uv sync
 uv run python main.py
 ```
 
-## Configuration for MCP Clients
-
-### Claude Desktop Configuration
-
-Add this to your Claude Desktop configuration file:
-
-**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
-**Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
-
-```json
-{
-  "mcpServers": {
-    "ecommerce-mcp-server": {
-      "command": "uv",
-      "args": [
-        "--directory",
-        "/home/mohammed/Documents/AI-Agent-Engineering/WeeK 3 /Homework",
-        "run",
-        "python",
-        "main.py"
-      ]
-    }
-  }
-}
-```
-
-### Cursor Configuration
-
-In Cursor, add to your `.cursorrules` or workspace settings:
-
-```json
-{
-  "mcp": {
-    "servers": {
-      "ecommerce-mcp-server": {
-        "command": "uv",
-        "args": ["--directory", "/path/to/Homework", "run", "python", "main.py"],
-        "env": {}
-      }
-    }
-  }
-}
-```
 
 ## Usage Examples
 
