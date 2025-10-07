@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv venv:*)",
+      "Bash(source:*)",
+      "Bash(uv pip install:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd Week 4: Comprehensive EU AI Act RAG Evaluation System\n\nImplemented a complete RAG (Retrieval-Augmented Generation) system for EU AI Act compliance assessment with multi-dimensional evaluation framework.\n\nKey Features:\n- Google Gemini API integration for LLM and embeddings (replacing OpenAI)\n- LangSmith integration for tracing and evaluation\n- ReAct agent with EU AI Act document search capability\n- Interactive Streamlit dashboard for user interaction\n\nEvaluation Framework:\n- Correctness Evaluator: Compares answers with reference answers\n- Relevance Evaluator: Checks answer relevance to questions\n- Groundedness Evaluator: Verifies answers are document-supported\n- Retrieval Relevance Evaluator: Assesses document retrieval quality\n\nComponents Added:\n- week_04_hw_template.ipynb: Complete implementation with all evaluators\n- streamlit_app.py: Interactive web dashboard with tabs for Q&A, search, and metrics\n- requirements.txt: All dependencies including langsmith, langchain-google-genai\n- README.md: Comprehensive documentation with setup instructions\n- .gitignore: Proper exclusions for env files and virtual environments\n- eu_ai_act.pdf: Source document for RAG system\n\nTechnical Implementation:\n- Virtual environment setup using uv (AI_RAG_System)\n- Document processing with PyPDF and RecursiveCharacterTextSplitter\n- Vector store using Gemini embeddings for semantic search\n- Multi-dimensional evaluation pipeline with LLM-as-Judge pattern\n- Human-friendly documentation and code comments\n\nBest Practices:\n- Clean, maintainable code following GANG-grade standards\n- Comprehensive error handling and user feedback\n- Environment variable management for API keys\n- Detailed docstrings and comments for non-technical users\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(chmod:*)",
+      "Bash(git reset:*)",
+      "Bash(pip install:*)",
+      "Bash(\"/home/mohammed/Documents/AI-Agent-Engineering/Week 4/AI_RAG_System/bin/pip\" install langchain-ollama)",
+      "Bash(streamlit run:*)",
+      "Read(//home/mhamdan/AgenticAI/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
