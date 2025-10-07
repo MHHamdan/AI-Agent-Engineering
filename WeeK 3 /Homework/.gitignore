@@ -1,0 +1,25 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Gradio certificates
+.gradio/
+
+# uv lock file (optional - some prefer to commit this)
+# uv.lock
+
+# OS files
+.DS_Store
+*.swp
+*.swo
