@@ -59,9 +59,6 @@ wheels/
 temp/
 tmp/
 
-# Claude files
-.claude/
-.claude
 
 # Virtual environments
 .venv/
