@@ -58,3 +58,28 @@ wheels/
 *.temp
 temp/
 tmp/
+
+# Claude files
+.claude/
+.claude
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Video files (optional - they're large)
+*.mov
+*.mp4
+
