@@ -66,14 +66,39 @@ This system helps you understand the EU AI Act by:
 ```
 Week 4/
 │
-├── src/                          Main code
+├── src/                          Main source code
 │   ├── config.py                 Settings and configuration
-│   └── utils/                    Helper tools
+│   ├── evaluation_pipeline.py   Complete evaluation orchestration
+│   │
+│   ├── agents/                   Agent-to-Agent (A2A) Protocol
+│   │   ├── base_agent.py         Base class for all agents
+│   │   ├── coordinator_agent.py  Orchestrates multi-agent workflow
+│   │   ├── retrieval_agent.py    Document retrieval and search
+│   │   ├── analysis_agent.py     Document analysis and extraction
+│   │   └── answer_agent.py       Final answer generation
+│   │
+│   ├── evaluators/               Quality evaluation metrics
+│   │   ├── correctness.py        Answer correctness validator
+│   │   ├── relevance.py          Question-answer relevance
+│   │   ├── groundedness.py       Document-based verification
+│   │   └── retrieval_relevance.py Retrieval quality assessment
+│   │
+│   └── utils/                    Helper utilities
+│       ├── document_processor.py PDF loading and chunking
+│       ├── embeddings.py         Vector store creation
+│       └── dataset.py            Evaluation dataset management
 │
 ├── tests/                        Automated tests
-├── streamlit_app.py              Web interface
-├── requirements.txt              Required packages
-├── requirements-dev.txt          Development tools
+│   ├── __init__.py
+│   └── test_config.py            Configuration validation tests
+│
+├── main.py                       CLI entry point (evaluate/test/setup)
+├── streamlit_app.py              Interactive web interface
+├── eu_ai_act.pdf                 Official EU AI Act document
+├── requirements.txt              Production dependencies
+├── requirements-dev.txt          Development tools (pytest, mypy, black)
+├── pytest.ini                    Test configuration
+├── week_04_hw_template.ipynb     Jupyter notebook template
 └── README.md                     This file
 ```
 
